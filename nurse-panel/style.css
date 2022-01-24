@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body{
+    font-family: 'Mukta', Arial, Helvetica, sans-serif;
+    background:linear-gradient(45deg, #00008b 50% , white 50%);
+}
+
+header{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+header h1{
+    text-align:center;
+    padding:1em 1em;
+    background-color: #00008b;
+    text-transform: uppercase;
+    letter-spacing:5px;
+    font-weight: bold;
+    color:white;
+}
+
+.services-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:94vh;
+}
+.services-box{
+    background-color:#e8e8e8;
+    display:flex;
+    width:100%;
+    max-width: 960px;
+
+    border-radius:1em;
+}
+.service-card:hover, .service-card:focus{
+    cursor:pointer;
+}
+.service-img{
+    width:100%;
+    height:30%;
+    margin-bottom:2em;
+}
+.service{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    width:calc(100%/3);
+    padding:1em 2em;
+}
+.service:hover, .service:focus{
+    background-color:rgb(211, 211, 211);
+    border-radius:1em;
+}
+.service ul{
+    flex:1;
+}
+.service h3{
+    border: 1px solid black;
+    display:block;
+    padding:1em 2em;
+}
+.service p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.radio-service{
+    align-self: flex-start;
+}
+
+.services-table{
+    border:1px solid black;
+}
+
+.plan-description{
+    margin:10px 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    border-top:1px solid #aaaaff;
+    border-bottom:1px solid #aaaaff;
+    padding:1em 0em;
+}
+
+
+.service-card{
+    border:2px solid #00008b;
+    color: #00008b;
+    font-size:20px;
+    border-radius: 0.5em;;
+    display:inline-block;
+    padding:1em 2em;
+    margin-top:1em;
+    letter-spacing: 1px;
+    transition:background-color cubic-bezier(0.5, 1, 0.89, 1) 300ms,color cubic-bezier(0.5, 1, 0.89, 1) 0.4s;
+}
+.service-card:hover, .service-card:focus{
+    background-color: #00008b;
+    color:white;
+}
+
+/* media */
+
+@media(max-width:800px){
+    .services-box{
+        flex-direction:column;
+    }
+    .service{
+        width:100%;
+    }
+    .service-img{
+        align-self:center;
+        flex:0 2;
+    }
+}
